@@ -1,0 +1,72 @@
+.link {
+	margin-top: 10px;
+	> a {
+		opacity: 0.8;
+		font-family: HankenGrotesk;
+		font-size: 14px;
+		font-weight: bold;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		color: #e89cae;
+		text-decoration: none;
+	}
+}
+
+.login_btn {
+	margin-left: auto;
+	margin-top: 29px;
+	width: 145px;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	height: 46px;
+	border-radius: 23px;
+	background-color: #2c6de8;
+	// font
+	font-family: HankenGrotesk;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	color: #ffffff;
+	&:disabled {
+		background-color: gray;
+		cursor: not-allowed;
+	}
+}
+
+.login_btn:hover {
+	transform: translateY(1px);
+}
+
+.input_wrapper {
+	margin-top: 22px;
+}
+
+.title {
+	opacity: 0.8;
+	font-family: HankenGrotesk;
+	font-weight: bold;
+	font-size: 24px;
+	margin-top: 0;
+	color: #000000;
+	margin: 0px;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	max-width: 500px;
+    margin: auto;
+}
+@media only screen and (max-width: 500px) {
+	.title {
+		text-align: center;
+		font-size: 20px;
+		margin-top: 25px;
+	}
+	.login_btn {
+		margin-right: auto;
+	}
+}
